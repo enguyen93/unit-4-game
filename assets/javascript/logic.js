@@ -6,7 +6,7 @@ var crystal4 = "assets/images/red.jpg";
 
 var crystals = [crystal1, crystal2, crystal3, crystal4];
 var points = 0
-
+var total = []
 
 var crystalIds = ["crystal1", "crystal2", "crystal3", "crystal4"]
 
@@ -32,6 +32,8 @@ for (var i = 0; i < crystals.length; i++) {
 
 }
 
+
+//redo this part dynamically
 $("#crystal1").on("click", function () {
     points += 5;
     $("#yourPoints").text(points);
@@ -54,14 +56,28 @@ $("#crystal4").on("click", function () {
 
 
 
+//math function to select a random number
 
-
-function compChoice() {
-    var randScore = Math.floor(Math.random() * (101 - 35)) + 35;
-    return randScore;
-    console.log(randScore);
+function getRandomInt(max, min) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+//this function calling on the random number function
+//but setting a certain parameter
+//keeping it within 100 but only divisible by 5
+function randNum() {
+    return getRandomInt(100 / 10, 1 / 10) * 5 + 5;
+    total.push(getRandomInt);
 }
 
-$("#randScore").text(compChoice());
+$("#randScore").text(randNum());
+console.log(getRandomInt(100 / 10, 1 / 10) * 5 + 5);
 
+function checkPlayerScore() {
+    var checkYourPoints = $("#yourPoints").text(points);
 
+    if (checkYourPoints === total){
+        console.log("hey you won");
+}
+}
+
+checkPlayerScore();
