@@ -54,8 +54,6 @@ $("#crystal4").on("click", function () {
 
 
 
-
-
 function compChoice() {
     var randScore = Math.floor(Math.random() * (101 - 35)) + 35;
     return randScore;
