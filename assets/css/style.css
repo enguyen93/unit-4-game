@@ -1,16 +1,30 @@
 .crystal1 {
     background-image: url(../images/blue.jpg);
-    background-size:  100%;
 }
 .crystal2 {
     background-image: url(../images/green.jpg);
-    background-size:  100%;
 }
 .crystal3 {
     background-image: url(../images/purp.jpg);
-    background-size:  100%;
 }
 .crystal4 {
     background-image: url(../images/red.jpg);
+}
+
+body {
+    background-image: url(../images/newback.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center !important;
+}
+
+#yourPoints, #gameName, #wins, #losses, #randScore, .instructionsContainer, .pointHolder {
+    font-size: 1.8rem;
+
+}
+
+.crystal1,.crystal2,.crystal3,.crystal4 {
+    cursor: pointer;
+    margin-right: 10px;
     background-size:  100%;
 }
