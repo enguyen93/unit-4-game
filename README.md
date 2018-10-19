@@ -1,6 +1,6 @@
 # unit-4-game
 
-#The Crystal Collector Game! 
+<H1>#The Crystal Collector Game!</H1>
 
 ##I had a lot of fun doing this game because of all the different things I could make after I learned how to do this one. 
 
