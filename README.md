@@ -1,8 +1,8 @@
 # unit-4-game
 
-<H1>#The Crystal Collector Game!</H1>
+<#H1>The Crystal Collector Game!</H1>
 
-<H2>##I had a lot of fun doing this game because of all the different things I could make after I learned how to do this one.</H2>
+<##H2>I had a lot of fun doing this game because of all the different things I could make after I learned how to do this one.</H2>
 
 The point of this game is to click on one of four :large_blue_diamond: and it will add a random number to your total score!
 
